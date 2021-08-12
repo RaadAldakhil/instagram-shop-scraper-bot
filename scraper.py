@@ -3,10 +3,9 @@ from instagramy import InstagramUser
 # Connect to profile
 user = InstagramUser("raad.aldakhil")
 
-print(user.popularity())
-print(user.get_biography())
+print(user.biography())
 
-posts = user.get_posts_details()
+posts = user.posts()
 
 print('\n\nLikes', 'Comments')
 for post in posts:
