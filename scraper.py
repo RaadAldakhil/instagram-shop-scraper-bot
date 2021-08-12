@@ -6,4 +6,4 @@ user = InstagramUser("raad.aldakhil",from_cache=True)
 print(user.biography)
 posts = user.posts
 for post in posts:
-    print(post["likes"])
+    print(post[8])
