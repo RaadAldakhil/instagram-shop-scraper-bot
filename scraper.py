@@ -4,4 +4,6 @@ from instagramy import InstagramUser
 user = InstagramUser("raad.aldakhil",from_cache=True)
 
 print(user.biography)
-print(user.posts)
+
+for post in posts:
+    print(post["likes"])
