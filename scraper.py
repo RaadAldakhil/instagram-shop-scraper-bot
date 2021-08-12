@@ -1,9 +1,11 @@
 from instagramy import InstagramUser
+import requests
 
 # Connect to profile
 user = InstagramUser("raad.aldakhil",from_cache=True)
 
 print(user.biography)
 posts = user.posts
-for post in posts:
-    print(post[8])
+for index, post in enumerate(posts):
+    r = requests.get(posts[8],allow_redirects=True)
+    open('post#'+index,'wb').write(r.content)
