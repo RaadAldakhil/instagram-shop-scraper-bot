@@ -1,7 +1,7 @@
-from instagramy import Instagram
+from instagramy import InstagramUser
 
 # Connect to profile
-user = Instagram("raad.aldakhil")
+user = InstagramUser("raad.aldakhil")
 
 print(user.popularity())
 print(user.get_biography())
