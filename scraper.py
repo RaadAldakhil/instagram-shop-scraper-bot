@@ -7,8 +7,5 @@ print(user.biography)
 
 posts = user.posts
 
-print('\n\nLikes', 'Comments')
 for post in posts:
-    likes = post["likes"]
-    comments = post["comment"]
-    print(likes,comment)
+    print(post)
