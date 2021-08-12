@@ -8,4 +8,4 @@ print(user.biography)
 posts = user.posts
 for index, post in enumerate(posts):
     r = requests.get(post[8],allow_redirects=True)
-    open('post#'+str(index),'wb').write(r.content)
+    open('post#'+str(index+1),'wb').write(r.content)
